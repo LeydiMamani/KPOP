@@ -24,7 +24,7 @@ def recomendar_canciones_por_artista(artista):
         return
 
     # Ordenar por ranking y mostrar las 5 mejores
-    mejores_canciones = canciones_artista.sort_values(by='rank').head(10)
+    mejores_canciones = canciones_artista.sort_values(by='rank').head(600)
 
     print(f"Las 5 mejores canciones de {artista} son:\n")
     print(mejores_canciones[['song_title', 'rank']])
